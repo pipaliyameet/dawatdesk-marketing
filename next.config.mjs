@@ -4,6 +4,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    outputFileTracingExcludes: {
+      '*': ['.env*', '.env.local', '.env*.local'],
+    },
+  },
 };
 
 export default nextConfig;
